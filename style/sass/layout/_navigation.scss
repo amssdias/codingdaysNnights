@@ -1,0 +1,53 @@
+.navigation-bar {
+    position: fixed;
+    top: 0;
+    left: 25%;
+    right: 25%;
+    background-color: $color-cards;
+    height: 8rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include respond(tab-land) { // width < 1200?
+        left: 25%;
+        right: 25%;
+    }
+
+    @include respond(tab-port) { // width < 900?
+        left: 15%;
+        right: 15%;
+    }
+    
+    @include respond(big-desktop) {
+    }
+
+    @include respond(phone) { // width < 600?
+        left: 10%;
+        right: 10%;
+    }
+
+    & span {
+        font-size: 3rem;
+        color: $color-white;
+        padding: 0rem 2rem;
+    }
+
+
+    &__list {
+        display: flex;
+
+        &__item {
+            list-style-type: none;
+            padding: 1rem 2rem;
+            font-size: 1.6rem;
+
+            &__link {
+                color: $color-white;
+                text-decoration: none;
+
+            }
+        }
+    }
+}

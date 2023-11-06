@@ -1,0 +1,20 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        color: $color-white;
+        font-size: 1.4rem;
+
+        background-color: $color-green-dark-1;
+        padding: 2rem 3.6rem;
+        letter-spacing: 0.2rem;
+        transition: 0.5s;
+
+    }
+
+    &:hover {
+        // background-color: $color-grey;
+    }
+
+}

@@ -1,0 +1,294 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+  80% {
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 46%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+::selection {
+  color: #fff;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  line-height: 1.2;
+  background-color: #02050a;
+}
+
+.heading-primary {
+  font-size: 6rem;
+}
+
+.heading-secondary {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+}
+.heading-secondary__subtitle {
+  font-size: 2.8rem;
+  color: #55e6a5;
+  text-transform: uppercase;
+}
+
+.heading-tertiary {
+  color: #fff;
+  font-size: 3.2rem;
+}
+
+.heading-quaternary {
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  color: #a2a2a2;
+}
+
+.margin-bottom-xl {
+  margin-bottom: 8rem;
+}
+
+.margin-bottom-xsmall {
+  margin-bottom: 2rem;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.card {
+  background-color: #09101a;
+  padding: 5rem 5rem;
+  border-radius: 1rem;
+}
+.card:not(:last-child) {
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .card:not(:last-child) {
+    margin-right: 0rem;
+    margin-bottom: 2rem;
+  }
+}
+.card__container {
+  display: flex;
+}
+@media only screen and (max-width: 56.25em) {
+  .card__container {
+    flex-direction: column;
+  }
+}
+.card p {
+  color: #a2a2a2;
+}
+
+.btn, .btn:link, .btn:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  background-color: #008170;
+  padding: 2rem 3.6rem;
+  letter-spacing: 0.2rem;
+  transition: 0.5s;
+}
+.header {
+  background-color: #02050a;
+  height: 100vh;
+  width: 100%;
+  padding: 10rem 35rem 10rem 60rem;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 75em) {
+  .header {
+    padding: 10rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .header {
+    padding: 0rem;
+  }
+}
+.header-content {
+  padding: 15rem 0rem;
+  border: 1px solid white;
+  color: #fff;
+  width: 60%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.navigation-bar {
+  position: fixed;
+  top: 0;
+  left: 25%;
+  right: 25%;
+  background-color: #09101a;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 75em) {
+  .navigation-bar {
+    left: 25%;
+    right: 25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .navigation-bar {
+    left: 15%;
+    right: 15%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .navigation-bar {
+    left: 10%;
+    right: 10%;
+  }
+}
+.navigation-bar span {
+  font-size: 3rem;
+  color: #fff;
+  padding: 0rem 2rem;
+}
+.navigation-bar__list {
+  display: flex;
+}
+.navigation-bar__list__item {
+  list-style-type: none;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+}
+.navigation-bar__list__item__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.section-about-me, .section-services, .section-portfolio {
+  padding: 10rem 15rem;
+}
+@media only screen and (max-width: 75em) {
+  .section-about-me, .section-services, .section-portfolio {
+    padding: 10rem 15rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .section-about-me, .section-services, .section-portfolio {
+    padding: 10rem 10rem;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .section-about-me, .section-services, .section-portfolio {
+    padding: 10rem 25rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .section-about-me, .section-services, .section-portfolio {
+    padding: 10rem 5rem;
+  }
+}
+
+.section-about-me__content {
+  display: flex;
+}
+@media only screen and (max-width: 56.25em) {
+  .section-about-me__content {
+    flex-direction: column;
+  }
+}
+.section-about-me__content__text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media only screen and (max-width: 56.25em) {
+  .section-about-me__content__text {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+.section-about-me__content__text__container p {
+  color: #cbd5e1;
+  width: 90%;
+}
+.section-about-me__content__text__img {
+  width: 10rem;
+  height: 10rem;
+}
+.section-about-me__content__image {
+  width: 50%;
+}
+@media only screen and (max-width: 56.25em) {
+  .section-about-me__content__image {
+    margin: 0rem auto;
+  }
+}/*# sourceMappingURL=main.css.map */

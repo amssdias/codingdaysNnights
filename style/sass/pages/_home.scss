@@ -1,0 +1,64 @@
+.section-about-me, .section-services, .section-portfolio {
+    // border: 1px solid white;
+
+    padding: 10rem 15rem;
+
+    @include respond(tab-land) { // width < 1200?
+        padding: 10rem 15rem;
+    }
+
+    @include respond(tab-port) { // width < 900?
+        padding: 10rem 10rem;
+    }
+    
+    @include respond(big-desktop) {
+        padding: 10rem 25rem;
+    }
+
+    @include respond(phone) { // width < 600?
+        padding: 10rem 5rem;
+    }
+}
+
+.section-about-me {
+
+    &__content {
+
+        display: flex;
+
+        @include respond(tab-port) { // width < 900?
+            flex-direction: column;
+        }
+
+        &__text {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            @include respond(tab-port) { // width < 900?
+                flex-direction: row;
+                width: 100%;
+            }
+
+            &__container p {
+                color: #cbd5e1;
+                width: 90%;
+            }
+
+            &__img {
+                width: 10rem;
+                height: 10rem;
+            }
+        }
+
+        &__image {
+            width: 50%;
+            // height: 20%;
+
+            @include respond(tab-port) { // width < 900?
+                margin: 0rem auto;
+            }
+        }
+    }
+}
