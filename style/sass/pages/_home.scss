@@ -8,7 +8,7 @@
     }
 
     @include respond(tab-port) { // width < 900?
-        padding: 10rem 10rem;
+        padding: 8rem 10rem;
     }
     
     @include respond(big-desktop) {
@@ -16,7 +16,7 @@
     }
 
     @include respond(phone) { // width < 600?
-        padding: 10rem 5rem;
+        padding: 6rem 5rem;
     }
 }
 
@@ -39,6 +39,11 @@
             @include respond(tab-port) { // width < 900?
                 flex-direction: row;
                 width: 100%;
+            }
+
+            @include respond(phone) { // width < 600?
+                flex-direction: column;
+                margin-bottom: 8rem;
             }
 
             &__container p {

@@ -159,18 +159,30 @@ body {
   background-color: #02050a;
   height: 100vh;
   width: 100%;
-  padding: 10rem 35rem 10rem 60rem;
+  padding: 10rem 15rem;
   display: flex;
   align-items: center;
 }
 @media only screen and (max-width: 75em) {
   .header {
-    padding: 10rem;
+    padding: 10rem 15rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
   .header {
-    padding: 0rem;
+    padding: 8rem 10rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  .header {
+    padding: 10rem 25rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .header {
+    padding: 6rem 5rem;
   }
 }
 .header-content {
@@ -210,8 +222,8 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .navigation-bar {
-    left: 10%;
-    right: 10%;
+    left: 8%;
+    right: 8%;
   }
 }
 .navigation-bar span {
@@ -242,7 +254,7 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .section-about-me, .section-services, .section-portfolio {
-    padding: 10rem 10rem;
+    padding: 8rem 10rem;
   }
 }
 @media only screen and (min-width: 112.5em) {
@@ -252,7 +264,7 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .section-about-me, .section-services, .section-portfolio {
-    padding: 10rem 5rem;
+    padding: 6rem 5rem;
   }
 }
 
@@ -274,6 +286,12 @@ body {
   .section-about-me__content__text {
     flex-direction: row;
     width: 100%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .section-about-me__content__text {
+    flex-direction: column;
+    margin-bottom: 8rem;
   }
 }
 .section-about-me__content__text__container p {

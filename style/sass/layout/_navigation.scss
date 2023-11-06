@@ -20,12 +20,9 @@
         right: 15%;
     }
     
-    @include respond(big-desktop) {
-    }
-
     @include respond(phone) { // width < 600?
-        left: 10%;
-        right: 10%;
+        left: 8%;
+        right: 8%;
     }
 
     & span {
