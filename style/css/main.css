@@ -163,6 +163,7 @@ body {
   border: 1px solid #55e6a5;
   color: #fff;
   font-size: 2.2rem;
+  text-transform: uppercase;
   padding: 2rem 4rem;
   transition: 0.4s;
 }
@@ -232,6 +233,7 @@ body {
   left: 25%;
   right: 25%;
   background-color: #09101a;
+  border-bottom: 0.2rem solid #55e6a5;
   height: 8rem;
   display: flex;
   justify-content: space-between;
@@ -263,14 +265,43 @@ body {
 .navigation-bar__list {
   display: flex;
 }
+@media only screen and (max-width: 37.5em) {
+  .navigation-bar__list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    top: 8rem;
+    background-color: #09101a;
+  }
+}
 .navigation-bar__list__item {
   list-style-type: none;
   padding: 1rem 2rem;
   font-size: 1.6rem;
 }
+@media only screen and (max-width: 37.5em) {
+  .navigation-bar__list__item {
+    text-align: center;
+    padding: 2rem 0rem;
+    border-bottom: 1px dashed #55e6a5;
+    width: 100%;
+  }
+}
 .navigation-bar__list__item__link {
   color: #fff;
   text-decoration: none;
+  text-transform: capitalize;
+}
+.navigation-bar__icon {
+  height: 8rem;
+  display: none;
+}
+@media only screen and (max-width: 37.5em) {
+  .navigation-bar__icon {
+    display: block;
+  }
 }
 
 .section-about-me, .section-services, .section-skills, .section-portfolio {
