@@ -1,4 +1,4 @@
-.section-about-me, .section-services, .section-portfolio {
+.section-about-me, .section-services, .section-skills, .section-portfolio {
     // border: 1px solid white;
 
     padding: 10rem 15rem;
@@ -65,5 +65,21 @@
                 margin: 0rem auto;
             }
         }
+    }
+}
+
+.section-skills {
+    background-color: $color-cards;
+
+    &__content {
+        display: flex;
+        justify-content: space-around;
+
+        flex-wrap: wrap;
+
+        @include respond(phone) { // width < 900?
+            justify-content: space-evenly;
+        }
+
     }
 }

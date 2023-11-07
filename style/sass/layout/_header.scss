@@ -44,6 +44,10 @@
         flex-direction: column;
         align-items: start;
         justify-content: space-between;
+
+        @include respond(phone) { // width < 600?
+            width: 85;
+        }
     }
 
 }

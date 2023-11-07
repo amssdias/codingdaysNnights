@@ -124,11 +124,15 @@ body {
   background-color: #09101a;
   padding: 5rem 5rem;
   border-radius: 1rem;
+  width: 33%;
 }
 .card:not(:last-child) {
   margin-right: 2rem;
 }
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 75em) {
+  .card {
+    width: 100%;
+  }
   .card:not(:last-child) {
     margin-right: 0rem;
     margin-bottom: 2rem;
@@ -137,7 +141,7 @@ body {
 .card__container {
   display: flex;
 }
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 75em) {
   .card__container {
     flex-direction: column;
   }
@@ -155,6 +159,26 @@ body {
   letter-spacing: 0.2rem;
   transition: 0.5s;
 }
+.btn-skills {
+  border: 1px solid #55e6a5;
+  color: #fff;
+  font-size: 2.2rem;
+  padding: 2rem 4rem;
+  transition: 0.4s;
+}
+.btn-skills:hover {
+  background-color: #55e6a5;
+}
+@media only screen and (max-width: 75em) {
+  .btn-skills {
+    margin-bottom: 2rem;
+  }
+}
+
+.footer {
+  border: 1px solid green;
+}
+
 .header {
   background-color: #02050a;
   height: 100vh;
@@ -195,6 +219,11 @@ body {
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
+}
+@media only screen and (max-width: 37.5em) {
+  .header-content {
+    width: 85;
+  }
 }
 
 .navigation-bar {
@@ -244,26 +273,26 @@ body {
   text-decoration: none;
 }
 
-.section-about-me, .section-services, .section-portfolio {
+.section-about-me, .section-services, .section-skills, .section-portfolio {
   padding: 10rem 15rem;
 }
 @media only screen and (max-width: 75em) {
-  .section-about-me, .section-services, .section-portfolio {
+  .section-about-me, .section-services, .section-skills, .section-portfolio {
     padding: 10rem 15rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
-  .section-about-me, .section-services, .section-portfolio {
+  .section-about-me, .section-services, .section-skills, .section-portfolio {
     padding: 8rem 10rem;
   }
 }
 @media only screen and (min-width: 112.5em) {
-  .section-about-me, .section-services, .section-portfolio {
+  .section-about-me, .section-services, .section-skills, .section-portfolio {
     padding: 10rem 25rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
-  .section-about-me, .section-services, .section-portfolio {
+  .section-about-me, .section-services, .section-skills, .section-portfolio {
     padding: 6rem 5rem;
   }
 }
@@ -308,5 +337,19 @@ body {
 @media only screen and (max-width: 56.25em) {
   .section-about-me__content__image {
     margin: 0rem auto;
+  }
+}
+
+.section-skills {
+  background-color: #09101a;
+}
+.section-skills__content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 37.5em) {
+  .section-skills__content {
+    justify-content: space-evenly;
   }
 }/*# sourceMappingURL=main.css.map */

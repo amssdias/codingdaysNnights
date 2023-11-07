@@ -18,3 +18,22 @@
     }
 
 }
+
+.btn-skills {
+    border: 1px solid $color-green-light;
+
+    color: $color-white;
+    font-size: 2.2rem;
+
+    padding: 2rem 4rem;
+
+    transition: 0.4s;
+
+    &:hover {
+        background-color: $color-green-light;
+    }
+
+    @include respond(tab-land) { // width < 1200?
+        margin-bottom: 2rem;
+    }
+}
