@@ -183,7 +183,9 @@ body {
 }
 
 .header {
-  background-color: #02050a;
+  background-image: linear-gradient(to bottom, rgba(15, 15, 15, 0.7), rgba(15, 15, 15, 0.9)), url(../../../images/header-2.avif);
+  background-position: center;
+  background-size: cover;
   height: 100vh;
   width: 100%;
   padding: 10rem 15rem;
@@ -213,8 +215,8 @@ body {
   }
 }
 .header-content {
+  opacity: 1;
   padding: 15rem 0rem;
-  border: 1px solid white;
   color: #fff;
   width: 60%;
   height: 55%;
@@ -225,8 +227,11 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .header-content {
-    width: 85;
+    width: 85%;
   }
+}
+.header-content .paragraph {
+  color: #fff;
 }
 
 .navigation-bar {
