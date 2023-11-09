@@ -57,9 +57,7 @@
 
             @include respond(phone) {
                 text-align: center;
-                // width < 600?
                 padding: 2rem 0rem;
-                border-bottom: 1px dashed $color-green-light;
                 width: 100%;
             }
 
