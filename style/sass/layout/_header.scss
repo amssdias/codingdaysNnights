@@ -55,6 +55,8 @@
 
         & .paragraph {
             color: $color-white;
+
+            animation: moveInLeft 1s ease-out;
         }
     }
 

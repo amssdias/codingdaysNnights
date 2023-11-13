@@ -1,18 +1,18 @@
 .section-about-me, .section-services, .section-skills, .section-portfolio {
     // border: 1px solid white;
 
-    padding: 10rem 15rem;
+    padding: 6rem 15rem;
 
     @include respond(tab-land) { // width < 1200?
-        padding: 10rem 15rem;
+        padding: 6rem 15rem;
     }
 
     @include respond(tab-port) { // width < 900?
-        padding: 8rem 10rem;
+        padding: 6rem 10rem;
     }
     
     @include respond(big-desktop) {
-        padding: 10rem 25rem;
+        padding: 6rem 25rem;
     }
 
     @include respond(phone) { // width < 600?

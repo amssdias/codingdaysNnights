@@ -28,6 +28,32 @@ ORDER: Base + typography > general layout + grid > page layout > components
     transform: translate(0);
   }
 }
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+  80% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 *,
 *::after,
 *::before {
@@ -77,6 +103,7 @@ body {
 
 .heading-primary {
   font-size: 6rem;
+  animation: moveInTop 1s ease-out;
 }
 
 .heading-secondary {
@@ -118,6 +145,10 @@ body {
 
 .text-align-center {
   text-align: center;
+}
+
+.animation-move-in-bottom {
+  animation: moveInBottom 1s ease-out;
 }
 
 .card {
@@ -285,6 +316,7 @@ body {
 }
 .header-content .paragraph {
   color: #fff;
+  animation: moveInLeft 1s ease-out;
 }
 
 .navigation-bar {
@@ -364,21 +396,21 @@ body {
 }
 
 .section-about-me, .section-services, .section-skills, .section-portfolio {
-  padding: 10rem 15rem;
+  padding: 6rem 15rem;
 }
 @media only screen and (max-width: 75em) {
   .section-about-me, .section-services, .section-skills, .section-portfolio {
-    padding: 10rem 15rem;
+    padding: 6rem 15rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
   .section-about-me, .section-services, .section-skills, .section-portfolio {
-    padding: 8rem 10rem;
+    padding: 6rem 10rem;
   }
 }
 @media only screen and (min-width: 112.5em) {
   .section-about-me, .section-services, .section-skills, .section-portfolio {
-    padding: 10rem 25rem;
+    padding: 6rem 25rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
