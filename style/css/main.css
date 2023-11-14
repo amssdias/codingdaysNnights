@@ -54,6 +54,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
     transform: translate(0);
   }
 }
+@keyframes appearCardText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 *,
 *::after,
 *::before {
@@ -143,6 +151,10 @@ body {
   margin-bottom: 2rem;
 }
 
+.margin-top-xsmall {
+  margin-top: 2rem;
+}
+
 .text-align-center {
   text-align: center;
 }
@@ -151,14 +163,21 @@ body {
   animation: moveInBottom 1s ease-out;
 }
 
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
 .card {
   background-color: #09101a;
   padding: 5rem 5rem;
   border-radius: 1rem;
-  width: 33%;
-}
-.card:not(:last-child) {
-  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 @media only screen and (max-width: 75em) {
   .card {
@@ -169,16 +188,23 @@ body {
     margin-bottom: 2rem;
   }
 }
+.card__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__arrow {
+  width: 5rem;
+  margin-left: 2rem;
+}
 .card__container {
   display: flex;
-}
-@media only screen and (max-width: 75em) {
-  .card__container {
-    flex-direction: column;
-  }
+  flex-direction: column;
 }
 .card p {
   color: #a2a2a2;
+  animation: appearCardText 1s ease-out;
 }
 
 .btn, .btn:link, .btn:visited {

@@ -44,7 +44,4 @@ function addAnimationHeadings() {
     }
 }
 
-
-
 window.addEventListener("scroll", addAnimationHeadings);
-
