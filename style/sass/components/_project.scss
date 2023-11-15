@@ -1,0 +1,85 @@
+.project {
+
+    display: flex;
+
+    &__images{
+        width: 100%;
+        
+        position: relative;
+
+        &__image {
+            position: absolute;
+
+            width: 50%;
+            // max-width: 40rem;
+
+            // box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.4);
+            transition: 0.2s;
+
+            // @include respond(tab-land) { // width < 1200
+            //     min-width: 70%;
+            //     width: 70%;
+            //     padding: 10rem 2rem;
+            // }
+    
+            // @include respond(big-desktop) { // width < 1800
+            //     width: 60%;
+            //     max-width: 40rem;
+            // }
+
+            // &:hover {
+            //     // outline: 1.5rem solid $color-green-light;
+            //     transform: scale(1.05) translateY(-0.5rem);
+            //     box-shadow: 0 2.5rem 4rem rgba(0,0,0,0.5);
+            //     z-index: 20;
+
+            // }
+
+            &--1 {
+                top: 2rem;
+                right: 10rem;
+                z-index: 10;
+
+                @include respond(tab-land) { // width < 1200
+                    right: 2rem;
+                }
+            }
+            
+            &--2 {
+                top: 25rem;
+                right: 20rem;
+                z-index: 10;
+
+                @include respond(tab-land) { // width < 1200
+                    right: 10rem;
+                }
+            }
+            
+            &--3 {
+                // Phone
+                // width: 50%;
+                // width: ;
+                top: 1rem;
+                left: -2rem;
+
+                // @include respond(big-desktop) { // width < 1800
+                //     width: 50%;
+                //     left: -10rem;
+                // }
+            }
+        }
+    }
+
+    &__text {
+        padding: 10rem 2rem;
+
+        
+        @include respond(tab-land) { // width < 900?
+            padding: 10rem 2rem;
+        }
+
+        @include respond(big-desktop) { // width < 1800
+            padding: 10rem 2rem;
+        }
+    }
+}
