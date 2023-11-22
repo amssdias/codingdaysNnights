@@ -181,24 +181,27 @@
 
             <div class="project">
 
-                <div class="project__images">
-                    <img sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" class="project__images__image project__images__image--1" src="images/portfolio/chipi-desktop-2.png" alt="Landing page desktop">
-                    <img sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" class="project__images__image project__images__image--2" src="images/portfolio/chipi-desktop.png" alt="Landing page desktop about me">
-                    <img sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" class="project__images__image project__images__image--3" src="images/portfolio/chipi-phone.png" alt="Landing page contact">
+                <div class="project__images" data-mouse-down-at="0" data-prev-percentage="0">
+                    <a href="https://chipishow.com/" target="_blank">
+                        <img class="project__images__image project__images__image--1" src="images/portfolio/chipi-desktop-2.png" alt="Landing page desktop" draggable="false">
+                    </a>
+                    <!-- <img class="project__images__image project__images__image--3" src="images/portfolio/chipi-phone.png" alt="Landing page contact" draggable="false"> -->
+
+                    <!-- <img class="project__images__image project__images__image--2" src="images/portfolio/chipi-desktop.png" alt="Landing page desktop about me" draggable="false"> -->
                 </div>
 
                 <div class="project__text">
-                    <hgroup class="margin-bottom-xl">
+                    <hgroup class="margin-bottom-xsmall">
                         <h4 class="heading-quaternary">Chipi Show - Landing Page</h4>
                         <p class="paragraph">A landing page made for a busker who street performs around the world.</p>
                     </hgroup>
 
                     <hgroup>
                         <h4 class="heading-quaternary margin-bottom-xsmall">Technologies used</h4>
-                        <div class="section-skills__content">
-                            <span class="btn-skills">Html</span>
-                            <span class="btn-skills">CSS</span>
-                            <span class="btn-skills">Javascript</span>
+                        <div class="project__text__tech">
+                            <span class="btn">Html</span>
+                            <span class="btn">CSS</span>
+                            <span class="btn">Javascript</span>
                         </div>
                     </hgroup>
                 </div>
@@ -250,6 +253,7 @@
 
     <script src="js/menubar.js"></script>
     <script src="js/animations.js"></script>
+    <!-- <script src="js/project.js"></script> -->
     <script src="js/services.js"></script>
 
 </body>

@@ -83,11 +83,3 @@
 
     }
 }
-
-.section-portfolio {
-    padding-bottom: 40rem;
-
-    @include respond(tab-land) { // width < 1200?
-        padding-bottom: 10rem;
-    }
-}
