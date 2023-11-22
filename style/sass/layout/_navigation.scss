@@ -11,6 +11,8 @@
     justify-content: space-between;
     align-items: center;
 
+    z-index: 1000;
+    
     @include respond(tab-land) { // width < 1200?
         left: 25%;
         right: 25%;
@@ -38,6 +40,7 @@
 
         @include respond(phone) { // width < 600?
             display: none;
+            // z-index: 100;
 
             flex-direction: column;
             width: 100%;

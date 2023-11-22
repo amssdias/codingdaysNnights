@@ -4,6 +4,6 @@
 .margin-top-xsmall {margin-top: 2rem;}
 .text-align-center {text-align: center;}
 
-.animation-move-in-bottom {animation: moveInBottom 1s ease-out forwards;}
+.animation-move-in-bottom {animation: moveInBottom 1s ease-out; animation-fill-mode: forwards;}
 .display-none {display: none;}
 .display-block {display: block;}
