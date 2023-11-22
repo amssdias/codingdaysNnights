@@ -76,6 +76,7 @@
         justify-content: space-around;
 
         flex-wrap: wrap;
+        gap: 1rem;
 
         @include respond(phone) { // width < 900?
             justify-content: space-evenly;

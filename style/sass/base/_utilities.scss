@@ -1,8 +1,9 @@
 .margin-bottom-xl {margin-bottom: 8rem;}
+.margin-bottom-small {margin-bottom: 3rem;}
 .margin-bottom-xsmall {margin-bottom: 2rem;}
 .margin-top-xsmall {margin-top: 2rem;}
 .text-align-center {text-align: center;}
 
-.animation-move-in-bottom {animation: moveInBottom 1s ease-out;}
+.animation-move-in-bottom {animation: moveInBottom 1s ease-out forwards;}
 .display-none {display: none;}
 .display-block {display: block;}

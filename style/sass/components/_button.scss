@@ -36,3 +36,14 @@
         margin-bottom: 2rem;
     }
 }
+
+.btn-link {
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    text-align: center;
+    color: $color-white;
+
+    border-bottom: 2px solid white;
+
+}

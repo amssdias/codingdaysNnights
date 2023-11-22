@@ -120,6 +120,7 @@ body {
   flex-direction: column;
   font-size: 3.6rem;
   text-transform: uppercase;
+  opacity: 0;
 }
 .heading-secondary__subtitle {
   font-size: 2.8rem;
@@ -147,6 +148,10 @@ body {
   margin-bottom: 8rem;
 }
 
+.margin-bottom-small {
+  margin-bottom: 3rem;
+}
+
 .margin-bottom-xsmall {
   margin-bottom: 2rem;
 }
@@ -160,7 +165,7 @@ body {
 }
 
 .animation-move-in-bottom {
-  animation: moveInBottom 1s ease-out;
+  animation: moveInBottom 1s ease-out forwards;
 }
 
 .display-none {
@@ -234,6 +239,15 @@ body {
   .btn-skills {
     margin-bottom: 2rem;
   }
+}
+
+.btn-link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
+  border-bottom: 2px solid white;
 }
 
 .project {
@@ -546,6 +560,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 @media only screen and (max-width: 37.5em) {
   .section-skills__content {
