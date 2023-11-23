@@ -475,6 +475,7 @@ body {
   }
 }
 .navigation-bar__list__item__link {
+  display: block;
   color: #fff;
   text-decoration: none;
   text-transform: capitalize;
