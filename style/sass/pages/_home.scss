@@ -39,6 +39,7 @@
             @include respond(tab-port) { // width < 900?
                 flex-direction: row;
                 width: 100%;
+                margin-bottom: 4rem;
             }
 
             @include respond(phone) { // width < 600?
@@ -59,9 +60,11 @@
 
         &__image {
             width: 50%;
+            object-fit: contain;
             // height: 20%;
 
             @include respond(tab-port) { // width < 900?
+                width: 80%;
                 margin: 0rem auto;
             }
         }
