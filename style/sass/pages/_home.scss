@@ -16,7 +16,7 @@
     }
 
     @include respond(phone) { // width < 600?
-        padding: 6rem 5rem;
+        padding: 6rem 3rem;
     }
 }
 

@@ -16,3 +16,11 @@ $color-grey: #a2a2a2;
 $color-green-light: #55e6a5;
 $color-green-dark: #005B41;
 $color-green-dark-1: #008170;
+
+@font-face {
+    font-family: 'Roboto'; // Give a name to your font
+    src: url('../../../fonts/Roboto/Roboto-Medium.ttf') format('truetype'); // Path to your .ttf file
+    font-weight: normal;
+    font-style: normal;
+}
+  
