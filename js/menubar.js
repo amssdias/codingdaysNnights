@@ -37,6 +37,11 @@ function reduceScroll(link) {
 }
 
 function toggleMenuOptions() {
+
+    if (window.innerWidth > 600) {
+        return
+    }
+
     if (menuOptions.style.display === "none" || !menuOptions.style.display) {
         menuOptions.style.display = "flex";
     } else {
