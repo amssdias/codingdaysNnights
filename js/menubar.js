@@ -2,27 +2,36 @@ const menuOptions = document.getElementById("navigation-bar__list");
 
 document.getElementById("navigation-bar__icon").addEventListener("click", toggleMenuOptions)
 
-// When clicking an item from the navigation bar
-const menuLinks = document.querySelectorAll(".navigation-bar__list__item__link");
-Array.from(menuLinks).forEach(function(menuOption) {
-    menuOption.addEventListener("click", toggleMenuOptions);
-    menuOption.addEventListener("click", reduceScroll);
+// Use Event delegation for better performance
+
+// NAVIGATION MENU -- Event for smooth scroll
+document.querySelector(".navigation-bar").addEventListener("click", function (e) {
+
+    e.preventDefault();
+    const targetElement = e.target;
+
+    if (targetElement.classList.contains("navigation-bar__list__item__link")) {
+        toggleMenuOptions();
+        SmoothScroll(targetElement);
+    }
 })
 
 
-// When clicking an option from the menu footer
-const menuFooterLinks = document.querySelectorAll(".footer__menu__link");
-Array.from(menuFooterLinks).forEach(function(footerLink) {
-    footerLink.addEventListener("click", reduceScroll);
-});
+// FOOTER MENU ---- Event for Smooth scroll
+document.querySelector(".footer__menu").addEventListener("click", function (e) {
+
+    e.preventDefault();
+    const targetElement = e.target;
+
+    if (targetElement.classList.contains("footer__menu__link")) {
+        SmoothScroll(targetElement);
+    }
+})
 
 
-function reduceScroll(link) {
+function SmoothScroll(link) {
 
-    // Have a smooth scroll but till a certain point
-    link.preventDefault(); // Prevent default anchor behavior
-
-    const targetId = link.currentTarget.getAttribute('href');
+    const targetId = link.getAttribute('href');
     const targetElement = document.querySelector(targetId);
 
     if (targetElement) {

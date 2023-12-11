@@ -1,5 +1,8 @@
 // Show content of services
-const cards = document.querySelectorAll(".card");
+
+document.querySelectorAll(".card").forEach(function (cardElement) {
+    cardElement.addEventListener("click", displayCardParagraph);
+})
 
 function displayCardParagraph() {
     const paragraph = this.querySelector(".paragraph");
@@ -11,8 +14,4 @@ function displayCardParagraph() {
     paragraph.classList.toggle("display-block");
     paragraph.classList.toggle("display-none");
 
-}
-
-for (const [index, cardElement] of cards.entries()) {
-    cardElement.addEventListener("click", displayCardParagraph);
 }
