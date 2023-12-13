@@ -1,47 +1,39 @@
-let headingAboutMe = document.getElementById("heading-about-me");
-let headingServices = document.getElementById("heading-services");
-let headingSkills = document.getElementById("heading-skills");
-let headingPortfolio = document.getElementById("heading-portfolio");
+const headings = new Map([
+    ["heading-about-me", false],
+    ["heading-services", false],
+    ["heading-skills", false],
+    ["heading-portfolio", false]
+]);
 
-let headingAboutMeAnimation = false;
-let headingServicesAnimation = false;
-let headingSkillsAnimation = false;
-let headingPortfolioAnimation = false;
+const observerOptions = {
+    root: null,
+    threshold: 0.2
+};
+const headersObserver = new IntersectionObserver(animationTitles, observerOptions);
 
 
-function addAnimationHeadings() {
-    let headingAboutMePosition = headingAboutMe.getBoundingClientRect().top + window.scrollY;
-    let headingServicesPosition = headingServices.getBoundingClientRect().top + window.scrollY;
-    let headingSkillsPosition = headingSkills.getBoundingClientRect().top + window.scrollY;
-    let headingPortfolioPosition = headingPortfolio.getBoundingClientRect().top + window.scrollY;
-    
-    let windowBottomPosition = window.scrollY + window.innerHeight;
+// Observe each heading and apply initial animation if needed
+headings.forEach((_, headingId) => {
 
-    if (!headingAboutMeAnimation && windowBottomPosition > headingAboutMePosition) {
-        headingAboutMe.classList.add("animation-move-in-bottom");
-        headingAboutMeAnimation = true;
-    }
-    
-    if (!headingServicesAnimation && windowBottomPosition > headingServicesPosition) {
-        headingServices.classList.add("animation-move-in-bottom");
-        headingServicesAnimation = true;
-    }
-    
-    if (!headingSkillsAnimation && windowBottomPosition > headingSkillsPosition) {
-        headingSkills.classList.add("animation-move-in-bottom");
-        headingSkillsAnimation = true;
-    }
-    
-    if (!headingPortfolioAnimation && windowBottomPosition > headingPortfolioPosition) {
-        headingPortfolio.classList.add("animation-move-in-bottom");
-        headingPortfolioAnimation = true;
-    }
+    const headingElement = document.getElementById(headingId);
+    headersObserver.observe(headingElement);
 
-    if (
-        headingAboutMeAnimation && headingServicesAnimation && 
-        headingSkillsAnimation && headingPortfolioAnimation) {
-            window.removeEventListener("scroll", addAnimationHeadings);
-    }
+});
+
+function animationTitles(entries) {
+
+    // For each entry/section, verify if is intersection to animate
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateHeading(entry.target);
+            headersObserver.unobserve(entry.target);
+        }
+    });
 }
 
-window.addEventListener("scroll", addAnimationHeadings);
+function animateHeading(headingElement) {
+    if (!headings.get(headingElement.id)) {
+        headingElement.classList.add("animation-move-in-bottom");
+        headings.set(headingElement.id, true);
+    }
+}
