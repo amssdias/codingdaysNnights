@@ -153,6 +153,12 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
 }
 
+.heading-fifth {
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
 .paragraph {
   font-size: 1.6rem;
   color: #a2a2a2;
@@ -320,6 +326,27 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.footer h5 {
+  letter-spacing: 0.2rem;
+}
+.footer h5::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid white;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  width: 20%;
+}
+@media only screen and (max-width: 56.25em) {
+  .footer h5::after {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .footer h5::after {
+    width: 50%;
+  }
 }
 .footer__social-network {
   display: flex;

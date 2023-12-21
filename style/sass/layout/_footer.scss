@@ -3,6 +3,26 @@
     flex-direction: column;
     justify-content: center;
 
+    & h5 {   
+        letter-spacing: 0.2rem;     
+        &::after {
+            content: "";
+            display: block;
+            border-bottom: 1px solid white;
+            margin: 0 auto;
+            margin-top: 0.5rem;
+            width: 20%;
+
+            @include respond(tab-port) {
+                width: 30%;
+            }
+
+            @include respond(phone) {
+                width: 50%;
+            }
+        }
+    }
+
     &__social-network {
         display: flex;
         justify-content: center;
