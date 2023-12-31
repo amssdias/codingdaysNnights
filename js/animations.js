@@ -2,7 +2,8 @@ const headings = new Map([
     ["heading-about-me", false],
     ["heading-services", false],
     ["heading-skills", false],
-    ["heading-portfolio", false]
+    ["heading-portfolio", false],
+    ["heading-testimonials", false]
 ]);
 
 const observerOptions = {

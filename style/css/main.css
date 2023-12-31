@@ -149,6 +149,12 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
 }
 
+.heading-fifth {
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
 .paragraph {
   font-size: 1.6rem;
   color: #a2a2a2;
@@ -309,6 +315,81 @@ h1, h2, h3, h4 {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 2rem 1rem;
+}
+
+.slider {
+  padding: 3rem 0rem;
+  border: 2px solid #162740;
+  border-radius: 2rem;
+  height: 25rem;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+@media only screen and (min-width: 112.5em) {
+  .slider {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 75em) {
+  .slider {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .slider {
+    height: 35rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .slider {
+    height: 50rem;
+  }
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0rem 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
+}
+.slide footer {
+  justify-self: flex-end;
+}
+.slide footer .reviewer-name {
+  font-size: 2rem;
+  color: #a2a2a2;
+}
+@media only screen and (max-width: 56.25em) {
+  .slide {
+    padding: 0rem 10rem;
+  }
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  border: none;
+  font-size: 3.25rem;
+  border-radius: 50%;
+  width: 5.5rem;
+  height: 5.5rem;
+  cursor: pointer;
+}
+.slider__btn--left {
+  left: 0;
+  transform: translate(50%, -50%);
+}
+.slider__btn--right {
+  right: 0;
+  transform: translate(-50%, -50%);
 }
 
 .footer {
@@ -508,26 +589,26 @@ h1, h2, h3, h4 {
   }
 }
 
-.section-about-me, .section-services, .section-skills, .section-portfolio {
+.section-about-me, .section-services, .section-skills, .section-portfolio, .section-testimonials {
   padding: 6rem 15rem;
 }
 @media only screen and (max-width: 75em) {
-  .section-about-me, .section-services, .section-skills, .section-portfolio {
+  .section-about-me, .section-services, .section-skills, .section-portfolio, .section-testimonials {
     padding: 6rem 15rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
-  .section-about-me, .section-services, .section-skills, .section-portfolio {
+  .section-about-me, .section-services, .section-skills, .section-portfolio, .section-testimonials {
     padding: 6rem 10rem;
   }
 }
 @media only screen and (min-width: 112.5em) {
-  .section-about-me, .section-services, .section-skills, .section-portfolio {
+  .section-about-me, .section-services, .section-skills, .section-portfolio, .section-testimonials {
     padding: 6rem 25rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
-  .section-about-me, .section-services, .section-skills, .section-portfolio {
+  .section-about-me, .section-services, .section-skills, .section-portfolio, .section-testimonials {
     padding: 6rem 3rem;
   }
 }
@@ -591,4 +672,8 @@ h1, h2, h3, h4 {
   .section-skills__content {
     justify-content: space-evenly;
   }
+}
+
+.section-testimonials {
+  background-color: #09101a;
 }/*# sourceMappingURL=main.css.map */

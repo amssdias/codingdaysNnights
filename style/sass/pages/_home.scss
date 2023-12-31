@@ -1,4 +1,4 @@
-.section-about-me, .section-services, .section-skills, .section-portfolio {
+.section-about-me, .section-services, .section-skills, .section-portfolio, .section-testimonials {
     // border: 1px solid white;
 
     padding: 6rem 15rem;
@@ -86,4 +86,8 @@
         }
 
     }
+}
+
+.section-testimonials {
+    background-color: $color-cards;
 }
