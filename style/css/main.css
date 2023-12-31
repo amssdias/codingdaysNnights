@@ -325,6 +325,9 @@ h1, h2, h3, h4 {
   width: 90%;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 @media only screen and (min-width: 112.5em) {
@@ -342,11 +345,6 @@ h1, h2, h3, h4 {
     height: 35rem;
   }
 }
-@media only screen and (max-width: 37.5em) {
-  .slider {
-    height: 50rem;
-  }
-}
 
 .slide {
   position: absolute;
@@ -359,9 +357,6 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: center;
   transition: transform 1s;
-}
-.slide footer {
-  justify-self: flex-end;
 }
 .slide footer .reviewer-name {
   font-size: 2rem;
