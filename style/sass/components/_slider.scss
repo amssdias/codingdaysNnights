@@ -46,13 +46,17 @@
 
     transition: transform 1s;
 
+    @include respond(tab-port) { 
+        padding: 0rem 10rem;
+    }
+
     & footer .reviewer-name {
         font-size: 2rem;
         color: $color-grey;
     }
 
-    @include respond(tab-port) { 
-        padding: 0rem 10rem;
+    & .paragraph {
+        text-align: center;
     }
 
 }

@@ -365,14 +365,17 @@ h1, h2, h3, h4 {
   justify-content: center;
   transition: transform 1s;
 }
-.slide footer .reviewer-name {
-  font-size: 2rem;
-  color: #a2a2a2;
-}
 @media only screen and (max-width: 56.25em) {
   .slide {
     padding: 0rem 10rem;
   }
+}
+.slide footer .reviewer-name {
+  font-size: 2rem;
+  color: #a2a2a2;
+}
+.slide .paragraph {
+  text-align: center;
 }
 
 .slider__btn {
