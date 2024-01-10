@@ -172,6 +172,10 @@ h1, h2, h3, h4 {
   margin-bottom: 2rem;
 }
 
+.margin-top-small {
+  margin-top: 3rem;
+}
+
 .margin-top-xsmall {
   margin-top: 2rem;
 }
@@ -191,6 +195,55 @@ h1, h2, h3, h4 {
 
 .display-block {
   display: block;
+}
+
+.btn, .btn--tech, .btn--contact {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.btn--tech {
+  color: #fff;
+  background-color: #008170;
+  padding: 2rem 3.6rem;
+  letter-spacing: 0.2rem;
+}
+
+.btn--skills {
+  border: 1px solid #55e6a5;
+  color: #fff;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem 4rem;
+  width: 20rem;
+  transition: 0.4s;
+}
+.btn--skills:hover {
+  background-color: #55e6a5;
+}
+@media only screen and (max-width: 75em) {
+  .btn--skills {
+    margin-bottom: 2rem;
+  }
+}
+
+.btn--contact {
+  color: #008170;
+  animation: appearCardText 1s ease-out;
+}
+
+.btn--contact--form {
+  font-size: 1.6rem;
+  padding: 1.5rem 5rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: #55e6a5;
+  transition: 0.5s;
+}
+.btn--contact--form:hover {
+  background-color: #008170;
 }
 
 .card {
@@ -229,49 +282,57 @@ h1, h2, h3, h4 {
   animation: appearCardText 1s ease-out;
 }
 
-.btn, .btn:link, .btn:visited {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.4rem;
-  background-color: #008170;
-  padding: 2rem 3.6rem;
-  letter-spacing: 0.2rem;
-  transition: 0.5s;
-}
-
-.btn-skills {
-  border: 1px solid #55e6a5;
-  color: #fff;
-  font-size: 2.2rem;
-  text-transform: uppercase;
+.form {
+  padding: 0rem 15rem;
   text-align: center;
-  padding: 2rem 4rem;
-  width: 20rem;
-  transition: 0.4s;
-}
-.btn-skills:hover {
-  background-color: #55e6a5;
 }
 @media only screen and (max-width: 75em) {
-  .btn-skills {
-    margin-bottom: 2rem;
+  .form {
+    padding: 0rem 10rem;
   }
 }
-
-.btn-link {
-  text-decoration: none;
-  font-size: 1.6rem;
-  text-transform: capitalize;
-  text-align: center;
-  color: #fff;
-  border-bottom: 2px solid white;
+@media only screen and (max-width: 56.25em) {
+  .form {
+    padding: 0rem 5rem;
+  }
 }
-
-.btn--contact {
-  text-decoration: none;
+@media only screen and (max-width: 37.5em) {
+  .form {
+    padding: 0rem 0rem;
+  }
+}
+.form__inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 2rem;
+}
+.form__inputs__text {
+  padding: 2rem;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.6rem;
+  outline: 2px solid #162740;
   font-size: 1.6rem;
-  color: #008170;
-  animation: appearCardText 1s ease-out;
+  width: 48%;
+  caret-color: #fff;
+  color: #a2a2a2;
+}
+.form__inputs__text::placeholder {
+  color: #a2a2a2;
+}
+.form__inputs__text::selection {
+  background-color: #fff;
+  color: #0F0F0F;
+}
+.form__inputs__text:nth-child(3) {
+  flex-grow: 1;
+  height: 12rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .form__inputs__text {
+    width: 100%;
+  }
 }
 
 .project {
@@ -322,6 +383,12 @@ h1, h2, h3, h4 {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 2rem 1rem;
+}
+.project__text__link {
+  text-transform: capitalize;
+  text-align: center;
+  color: #fff;
+  border-bottom: 2px solid white;
 }
 
 .slider {
@@ -630,26 +697,26 @@ h1, h2, h3, h4 {
   }
 }
 
-.section-about-me, .section-services, .section-skills, .section-portfolio, .section-testimonials {
+.section-about-me, .section-services, .section-skills, .section-portfolio, .section-testimonials, .section-contact {
   padding: 6rem 15rem;
 }
 @media only screen and (max-width: 75em) {
-  .section-about-me, .section-services, .section-skills, .section-portfolio, .section-testimonials {
+  .section-about-me, .section-services, .section-skills, .section-portfolio, .section-testimonials, .section-contact {
     padding: 6rem 15rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
-  .section-about-me, .section-services, .section-skills, .section-portfolio, .section-testimonials {
+  .section-about-me, .section-services, .section-skills, .section-portfolio, .section-testimonials, .section-contact {
     padding: 6rem 10rem;
   }
 }
 @media only screen and (min-width: 112.5em) {
-  .section-about-me, .section-services, .section-skills, .section-portfolio, .section-testimonials {
+  .section-about-me, .section-services, .section-skills, .section-portfolio, .section-testimonials, .section-contact {
     padding: 6rem 25rem;
   }
 }
 @media only screen and (max-width: 37.5em) {
-  .section-about-me, .section-services, .section-skills, .section-portfolio, .section-testimonials {
+  .section-about-me, .section-services, .section-skills, .section-portfolio, .section-testimonials, .section-contact {
     padding: 6rem 3rem;
   }
 }

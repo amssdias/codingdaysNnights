@@ -1,0 +1,56 @@
+.form {
+    padding: 0rem 15rem;
+    text-align: center;
+
+    @include respond(tab-land) { 
+        padding: 0rem 10rem;
+    }
+
+    @include respond(tab-port) { 
+        padding: 0rem 5rem;
+    }
+
+    @include respond(phone) { 
+        padding: 0rem 0rem;
+    }
+
+    &__inputs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 2rem;
+
+        &__text {
+            padding: 2rem;
+            background-color: transparent;
+            border: none;
+            border-radius: 0.6rem;
+            outline: 2px solid $color-dark-bluish;
+            font-size: 1.6rem;
+            width: 48%;
+            caret-color: $color-white;
+            color: $color-grey;
+            
+            &::placeholder {
+                color: $color-grey;
+            }
+
+            &::selection {
+                background-color: $color-white;
+                color: $color-black ;
+            }
+
+            &:nth-child(3) {
+                flex-grow: 1;
+                height: 12rem;
+            }
+
+            @include respond(phone) { 
+                width: 100%;
+            }
+        }
+
+    }
+
+
+}

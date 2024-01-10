@@ -54,5 +54,13 @@
             gap: 2rem 1rem;
         }
 
+        &__link {
+            text-transform: capitalize;
+            text-align: center;
+            color: $color-white;
+        
+            border-bottom: 2px solid white;
+        }
+
     }
 }
