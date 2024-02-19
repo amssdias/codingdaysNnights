@@ -13,6 +13,9 @@ function handleSmoothScrollOnClick(className, e) {
         if (className === "navigation-bar__list__item__link") toggleMenuOptions();
 
         const targetId = targetElement.getAttribute('href');
+
+        if (!targetId) return;
+
         const elementToScroll = document.querySelector(targetId);
         elementToScroll ? SmoothScroll(elementToScroll) : "";
     }
@@ -66,7 +69,6 @@ window.addEventListener("load", function (e) {
     const id = window.location.hash.slice(1);
 
     const targetElement = document.getElementById(id);
-    console.log(targetElement);
 
     if (!targetElement) return;
     SmoothScroll(targetElement);
