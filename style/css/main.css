@@ -211,6 +211,8 @@ h1, h2, h3, h4 {
 }
 
 .btn--skills {
+  --hover-color-letters: #fff;
+  --hover-background-color: #55e6a5;
   border: 1px solid #55e6a5;
   color: #fff;
   font-size: 2.2rem;
@@ -221,7 +223,8 @@ h1, h2, h3, h4 {
   transition: 0.4s;
 }
 .btn--skills:hover {
-  background-color: #55e6a5;
+  background-color: var(--hover-background-color);
+  color: var(--hover-color-letters);
 }
 @media only screen and (max-width: 75em) {
   .btn--skills {
@@ -236,6 +239,7 @@ h1, h2, h3, h4 {
 
 .btn--contact--form {
   font-size: 1.6rem;
+  font-weight: 600;
   padding: 1.5rem 5rem;
   border: none;
   border-radius: 1rem;
@@ -466,25 +470,22 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .footer h5 {
   letter-spacing: 0.2rem;
-}
-.footer h5::after {
-  content: "";
-  display: block;
-  border-bottom: 1px solid white;
-  margin: 0 auto;
-  margin-top: 0.5rem;
+  display: inline-block;
   width: 20%;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 0.5rem;
 }
 @media only screen and (max-width: 56.25em) {
-  .footer h5::after {
+  .footer h5 {
     width: 30%;
   }
 }
 @media only screen and (max-width: 37.5em) {
-  .footer h5::after {
+  .footer h5 {
     width: 50%;
   }
 }
@@ -531,6 +532,7 @@ h1, h2, h3, h4 {
 .footer__content {
   display: flex;
   justify-content: center;
+  align-self: normal;
   align-items: center;
 }
 .footer__content .paragraph {
@@ -693,6 +695,24 @@ h1, h2, h3, h4 {
   .navigation-bar__icon {
     display: block;
   }
+}
+
+.theme {
+  --hover-background-color: $color-white;
+  position: fixed;
+  left: 3%;
+  bottom: 3%;
+  border-radius: 50%;
+  border: 2px solid #55e6a5;
+  padding: 1rem;
+  width: 7rem;
+  height: 7rem;
+  transition: 0.2s;
+  z-index: 100;
+}
+.theme:hover {
+  cursor: pointer;
+  background-color: var(--hover-background-color);
 }
 
 .section-about-me, .section-services, .section-skills, .section-portfolio, .section-testimonials, .section-contact {

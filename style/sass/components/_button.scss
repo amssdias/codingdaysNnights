@@ -12,6 +12,9 @@
 }
 
 .btn--skills {
+    --hover-color-letters: #{$color-white};
+    --hover-background-color: #{$color-green-light};
+
     border: 1px solid $color-green-light;
 
     color: $color-white;
@@ -25,7 +28,8 @@
     transition: 0.4s;
 
     &:hover {
-        background-color: $color-green-light;
+        background-color: var(--hover-background-color);
+        color: var(--hover-color-letters);
     }
 
     @include respond(tab-land) { // width < 1200?
@@ -40,6 +44,8 @@
 
 .btn--contact--form {
     font-size: 1.6rem;
+    font-weight: 600;
+
     padding: 1.5rem 5rem;
     border: none;
     border-radius: 1rem;

@@ -2,25 +2,23 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     & h5 {   
-        letter-spacing: 0.2rem;     
-        &::after {
-            content: "";
-            display: block;
-            border-bottom: 1px solid white;
-            margin: 0 auto;
-            margin-top: 0.5rem;
-            width: 20%;
+        letter-spacing: 0.2rem;
+        display: inline-block;
+        width: 20%;
+        border-bottom: 1px solid $color-white;
+        padding-bottom: 0.5rem;
 
-            @include respond(tab-port) {
-                width: 30%;
-            }
-
-            @include respond(phone) {
-                width: 50%;
-            }
+        @include respond(tab-port) {
+            width: 30%;
         }
+
+        @include respond(phone) {
+            width: 50%;
+        }
+
     }
 
     &__social-network {
@@ -82,6 +80,7 @@
     &__content {
         display:flex;
         justify-content: center;
+        align-self: normal;
         align-items: center;
 
         & .paragraph {

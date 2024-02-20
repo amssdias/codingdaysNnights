@@ -1,0 +1,23 @@
+.theme {
+    --hover-background-color: $color-white;
+
+    position: fixed;
+    left: 3%;
+    bottom: 3%;
+
+    // background-color: white;
+    border-radius: 50%;
+    border: 2px solid $color-green-light;
+
+    padding: 1rem;
+    width: 7rem;
+    height: 7rem;
+    transition: 0.2s;
+
+    z-index: 100;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--hover-background-color);
+    }
+}
