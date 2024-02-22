@@ -1,0 +1,40 @@
+{
+    "navigation-bar-about": "About me",
+    "navigation-bar-services": "Services",
+    "navigation-bar-portfolio": "Portfolio",
+    "navigation-bar-contact": "Contact",
+
+    "header-title": "Masterful Code Creations",
+    "header-paragraph": "Blending creativity and expertise in HTML, CSS, JavaScript, Python, Django, and Bootstrap to turn bold ideas into real digital achievements.",
+
+    "section-about-me-title": "The Coder's Creed: My Ambition & Purpose",
+    "section-about-me-title-span": "About me",
+    "section-about-me-ambition": "My ambition",
+    "section-about-me-ambition-text": "I develop digital solutions that stand out, seamlessly blending innovation with user-friendliness. With a strong skill set in Python, HTML, CSS, Bootstrap, JavaScript, and Django, I specialize in creating dynamic, user-friendly software. I see technology as a positive force, focusing on coding that's not just functional but also forward-thinking. My journey as a developer is about transforming complexity into clarity, one line of code at a time.",
+    "section-about-me-purpose": "My Purpose",
+    "section-about-me-purpose-text": "My goal is simple: to empower minds through coding, one line at a time. As an experienced coding instructor, I find joy in guiding others on their tech journey. I'm passionate about making coding a skill for everyone, helping beginners get their start and seasoned pros get even better. My mission is to demystify coding, making it approachable, fun, and truly impactful.",
+
+    "section-services-title-span": "My services",
+    "section-services-web-scrapping": "Web Scraping and Data Extraction",
+    "section-services-web-scrapping-text": "Boost your decisions with top-notch, useful data. My web scraping skills are all about pulling important info from the web and turning it from a jumble of bits into something you can really use. Whether it's for market research, checking out the competition, or feeding your app, I make sure you get the data you need, neat and fast. You can concentrate on using these insights to drive your business forward, and I'll handle the tricky part of gathering the data.",
+    "section-services-web-development": "Web Development",
+    "section-services-web-development-text": "Building the online presence of your business with tailored web development services. I specialize in making unique, responsive, and captivating websites and web apps that match your business needs. Using the latest tech and frameworks, I focus on delivering a smooth user experience, combining great design with strong back-end features.",
+    "section-services-code-mentor": "Personalized Coding Mentorship",
+    "section-services-code-mentor-text": "Take your coding to the next level with mentorship that's all about you and your goals. Whether you're just starting or aiming to level up your programming skills, I offer personalized, one-on-one guidance and real-world insights. I've taught through various websites and have received great feedback from my students. My approach is tailored to your learning style and career dreams, with support that's designed to help you succeed in the coding world.",
+    "section-services-contact-me": "Contact me",
+
+    "section-skills-title-span": "My skills",
+    "section-portfolio-title-span": "Showcase of My Best Work",
+    "section-portfolio-chipi-description": "A landing page made for a busker who street performs around the world.",
+
+    "section-portfolio-tech-used": "Technologies used",
+    "section-portfolio-see-portfolio": "Click here to see project",
+    "section-testimonials-title-span": "Clients Review",
+
+    "section-testimonials-slide-victor": "¡Genial! Explica muy bien, sencillo, conciso y directo, Muy contento.",
+    "section-testimonials-slide-josue": "Es increíble, un profe que está muy pendiente del aprendizaje del alumno, le he solicitado en varias ocasiones desde que le conozco y siempre me soluciona cualquier duda. Muy majo y con mucha paciencia de explicarte los conceptos las veces que necesites. Además de sincero respecto al número de clases que necesitaba. Aconsejable sin duda!",
+    "section-testimonials-slide-felix": "¡Genial! Excelente, muy recomendable.",
+
+    "footer-title": "Few ways to contact me",
+    "footer-copyright": "Copyright © 2024 André Dias. All rights reserved."
+}

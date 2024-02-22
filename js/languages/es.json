@@ -1,0 +1,43 @@
+{
+    "navigation-bar-about": "Sobre mí",
+    "navigation-bar-services": "Servicios",
+    "navigation-bar-portfolio": "Portafolio",
+    "navigation-bar-contact": "Contacto",
+
+    "header-title": "Creaciones de Código Magistrales",
+    "header-paragraph": "Combinando creatividad y experticia en HTML, CSS, JavaScript, Python, Django y Bootstrap para transformar ideas audaces en logros digitales reales.",
+
+
+    "section-about-me-title": "El Credo del Programador: Mi Ambición y Propósito",
+    "section-about-me-title-span": "Sobre mí",
+    "section-about-me-ambition": "Mi ambición",
+    "section-about-me-ambition-text": "Desarrollo soluciones digitales que destacan, fusionando sin esfuerzo la innovación con la facilidad de uso. Con un sólido conjunto de habilidades en Python, HTML, CSS, Bootstrap, JavaScript y Django, me especializo en crear software dinámico y fácil de usar. Veo la tecnología como una fuerza positiva, enfocándome en programación que no solo es funcional, sino también progresista. Mi viaje como desarrollador se trata de transformar la complejidad en claridad, una línea de código a la vez.",
+    "section-about-me-purpose": "Mi Propósito",
+    "section-about-me-purpose-text": "Mi objetivo es simple: empoderar mentes a través de la codificación, una línea a la vez. Como instructor de codificación con experiencia, encuentro alegría en guiar a otros en su viaje tecnológico. Me apasiona hacer de la codificación una habilidad para todos, ayudando a los principiantes a empezar y a los profesionales experimentados a mejorar aún más. Mi misión es desmitificar la codificación, haciéndola accesible, divertida y verdaderamente impactante.",
+
+    "section-services-title-span": "Mis servicios",
+    "section-services-web-scrapping": "Web Scraping y Extracción de Datos",
+    "section-services-web-scrapping-text": "Potencia tus decisiones con datos útiles de primera calidad. Mis habilidades de web scraping se centran en extraer información importante de la web y convertirla de un montón de bits a algo que realmente puedas utilizar. Ya sea para investigación de mercado, analizar a la competencia, o alimentar tu aplicación, me aseguro de que obtengas los datos que necesitas, de manera ordenada y rápida. Puedes concentrarte en utilizar estos conocimientos para impulsar tu negocio hacia adelante, y yo me encargo de la parte complicada de recopilar los datos.",
+    "section-services-web-development": "Desarrollo Web",
+    "section-services-web-development-text": "Construyendo la presencia en línea de tu negocio con servicios de desarrollo web a medida. Me especializo en crear sitios web y aplicaciones web únicas, responsivas y cautivadoras que se ajustan a las necesidades de tu negocio. Utilizando las últimas tecnologías y frameworks, me enfoco en ofrecer una experiencia de usuario fluida, combinando un gran diseño con características de back-end fuertes.",
+    "section-services-code-mentor": "Mentoría Personalizada en Programación",
+    "section-services-code-mentor-text": "Lleva tu programación al siguiente nivel con una mentoría que se trata todo sobre ti y tus objetivos. Ya sea que estés comenzando o apuntando a mejorar tus habilidades de programación, ofrezco orientación personalizada, uno a uno, y perspectivas del mundo real. He enseñado a través de varios sitios web y he recibido excelentes comentarios de mis estudiantes. Mi enfoque está adaptado a tu estilo de aprendizaje y sueños profesionales, con soporte diseñado para ayudarte a tener éxito en el mundo de la codificación.",
+    "section-services-contact-me": "Contáctame",
+    
+
+    "section-skills-title-span": "Mis habilidades",
+    "section-portfolio-title-span": "Vitrina de Mis Mejores Trabajos",
+    "section-portfolio-chipi-description": "Una página de aterrizaje creada para un bailarin callejero que actúa en las calles de todo el mundo.",
+
+    "section-portfolio-tech-used": "Tecnologías utilizadas",
+    "section-portfolio-see-portfolio": "Haz clic aquí para ver el proyecto",
+    "section-testimonials-title-span": "Opiniones de Clientes",
+
+    "section-testimonials-slide-victor": "¡Genial! Explica muy bien, sencillo, conciso y directo. Muy contento.",
+    "section-testimonials-slide-josue": "Es increíble, un profe que está muy pendiente del aprendizaje del alumno, le he solicitado en varias ocasiones desde que le conozco y siempre me soluciona cualquier duda. Muy majo y con mucha paciencia para explicarte los conceptos las veces que necesites. Además, es sincero respecto al número de clases que necesitaba. ¡Aconsejable sin duda!",
+    "section-testimonials-slide-felix": "¡Genial! Excelente, muy recomendable.",
+
+    "footer-title": "Algunas formas de contactarme",
+    "footer-copyright": "Derechos de autor © 2024 André Dias. Todos los derechos reservados."
+    
+}
