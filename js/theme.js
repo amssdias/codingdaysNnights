@@ -8,6 +8,7 @@ const colorSlateLight = "#cbd5e1";
 // Bright colors
 const colorSkyLight = "#f0f9ff";
 const colorEmeraldDark = "#022c22";
+const colorNeutralLight = "#f5f5f5";
 
 const bright = "bright";
 const dark = "dark";
@@ -60,8 +61,8 @@ function changeBackgroundTheme(theme) {
 
     // Change sections background
     document.querySelector("body").style.backgroundColor = isThemeBright(theme, colorGrey, "");
-    document.querySelector(".section-skills").style.backgroundColor = isThemeBright(theme, colorSkyLight, colorCards);
-    document.querySelector(".section-testimonials").style.backgroundColor = isThemeBright(theme, colorSkyLight, colorCards)
+    document.querySelector(".section-skills").style.backgroundColor = isThemeBright(theme, colorNeutralLight, colorCards);
+    document.querySelector(".section-testimonials").style.backgroundColor = isThemeBright(theme, colorNeutralLight, colorCards)
 
     // Change buttons background
     document.querySelectorAll(".btn--skills").forEach(btn => {
